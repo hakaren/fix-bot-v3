@@ -10,7 +10,8 @@ RUN apt-get update && \
 
 COPY package.json .
 
-RUN  npm i -g pm2 && pm2 start index
+RUN  npm install && npm install qrcode-terminal
+
 
 COPY . .
 
