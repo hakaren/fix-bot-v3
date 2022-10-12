@@ -85,7 +85,7 @@ global.loadDatabase = async function loadDatabase() {
 }
 loadDatabase()
 
-global.authFile = `${opts._[0] || 'session'}.data.json`
+global.authFile = `${opts._[0] || 'krisss'}.data.json`
 const { state, saveState } = store.useSingleFileAuthState(global.authFile)
 
 const connectionOptions = {
@@ -134,10 +134,10 @@ async function connectionUpdate(update) {
   }
   if (global.db.data == null) loadDatabase()
   if (connection == 'open') {
-console.log(chalk.yellow('Successfully connected by ' + author))
+console.log(chalk.yellow('𝐁𝐨𝐭 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐂𝐨𝐧𝐧𝐞𝐜𝐭𝐞𝐝 𝐁𝐲 𝐊𝐫𝐢𝐬 𝐇𝐨𝐬𝐭𝐢𝐧𝐠 ' + author))
 }
   console.log(JSON.stringify(update, null, 4))
-  if (update.receivedPendingNotifications) return this.sendButton(nomorown + '@s.whatsapp.net', 'Bot Successfully Connected', author, null, [['MENU', '/menu']], null)
+  if (update.receivedPendingNotifications) return this.sendButton(nomorown + '@s.whatsapp.net', '𝐁𝐨𝐭', author, null, [['𝐌𝐄𝐍𝐔', '/menu']], null)
 }
 
 process.on('uncaughtException', console.error)
